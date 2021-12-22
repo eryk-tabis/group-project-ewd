@@ -1,6 +1,7 @@
+function get_data(){
 var xmlhttp = new XMLHttpRequest();
 //link to api here
-var url = "https://my.api.mockaroo.com/test.json?key=07daec30";
+var url = "https://my.api.mockaroo.com/data.json?key=a2d938f0";
 //nie wiem co to ale do sprawdzenia
 // xmlhttp.onreadystatechange = function() {
 //     if (this.readyState == 4 && this.status == 200) {
@@ -10,4 +11,5 @@ var url = "https://my.api.mockaroo.com/test.json?key=07daec30";
 // };
 xmlhttp.open("GET", url, false);
 xmlhttp.send();
-console.log(JSON.parse(xmlhttp.responseText))
+return JSON.parse(xmlhttp.responseText)
+}
