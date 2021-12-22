@@ -1,4 +1,4 @@
-//some random charts to test
+//some random charts to test 
 const ctx = document.getElementById('myChart');
 const myChart = new Chart(ctx, {
     type: 'bar',

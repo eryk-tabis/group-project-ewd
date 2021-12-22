@@ -1,0 +1,44 @@
+* {
+    line-height: 1.2em;
+}
+.navbar {
+    text-shadow: .2em .2em .3em silver;
+    padding: 2%;
+    font-family: 'Freckle Face', cursive;
+    text-align: center;
+    background-color: rgb(100, 219, 235);
+}
+.this {
+    font-size: 300%;
+    text-decoration: none;
+    color: rgb(0, 47, 92);
+}
+a.navbar {
+    color: rgb(0, 96, 185);
+    font-size: 200%;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 0.3s;
+    font-family: 'Freckle Face', cursive;
+}
+a.navbar:hover, a.navbar:focus {
+    color: rgb(0, 47, 92);
+}
+footer {
+    padding: 2%;
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: 'Alata', sans-serif;
+    background-color: rgb(100, 219, 235);
+    color: rgb(0, 96, 185);
+}
+h1 {
+    font-size: 250%;
+    font-family: 'Alata', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 250%;
+    font-family: 'Alata', sans-serif;
+}
