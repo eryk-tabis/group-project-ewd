@@ -2,12 +2,38 @@
     <head>
         <!---this loads chart.js library-->
         <script  src="/scripts/chart.js"></script> 
-        <script type = 'module'  src='/scripts/connect.js'></script>
-        <script src='./scripts/script.js'></script>
-        
+        <!-- <script type = 'module'  src='/scripts/connect.js'></script>
+        <script src='./scripts/script.js'></script>  -->
     </head>
-    <body>
-        <canvas id='myChart'></canvas>
-        <script src="/scripts/chart11.js"></script>
+    <body>          
+          <button onclick="show('operation1')" value = 0>Replace to operation 1</button>
+          <button onclick="show('operation2')" value = 0>Replace to operation 2</button>
+          <button onclick="show('operation3')" value = 0>Replace to operation 3</button>
+          
+          
+          <div id="operation1" style='display: none'>
+            <canvas id= "chart1"></canvas>
+            <canvas id= "chart2"></canvas>
+          </div>
+          
+          <div id="operation2" style='display: none'>
+            <canvas id= "chart3"></canvas>
+            <canvas id= "chart4"></canvas>
+          </div>
+          
+          <div id="operation3" style='display: none'>
+            <canvas id= "chart5"></canvas>
+            <canvas id= "chart6"></canvas>
+          </div>
+          
+          <script>
+            function show(param_div_id) {
+                document.getElementById('operation1').style.display = 'none';
+                document.getElementById('operation2').style.display = 'none';
+                document.getElementById('operation3').style.display = 'none';
+                document.getElementById(param_div_id).style.display = 'block';
+            }
+          </script>
+        <script src="/scripts/main.js"></script>
     </body>
 </html>
