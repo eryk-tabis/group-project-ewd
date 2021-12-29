@@ -5,6 +5,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alata&family=Freckle+Face&display=swap" rel="stylesheet">
+        <script  src="/scripts/chart.js"></script> 
         <title>strona główna</title>
     </head>
     <body>
@@ -37,6 +38,7 @@
                 </div>
                 <div class="chart">
                     <!---wykres SŁUPKOWY opadów dziennych w grudniu-->
+                    <canvas id= "chart1"></canvas>
                 </div>
                 <div class="title-chart">
                     <!---RAFAŁ DAJ TU TYTUŁ WYKRESU (w h2)-->
@@ -44,6 +46,7 @@
                 </div>
                 <div class="chart">
                     <!---wykres SŁUPKOWY średnich opadów w październiku, listopadzie i grudniu-->
+                    <canvas id= "chart2"></canvas>
                 </div>
                 <div class="table" id="big_table"></div>
                 <p id="demo"></p>
@@ -55,6 +58,7 @@
                 </div>
                 <div class="chart">
                     <!---wykres LINIOWY temperatury dziennej w grudniu-->
+                    <canvas id= "chart3"></canvas>
                 </div>
                 <div class="title-chart">
                     <!---RAFAŁ DAJ TU TYTUŁ WYKRESU (w h2)-->
@@ -62,6 +66,7 @@
                 </div>
                 <div class="chart">
                     <!---wykres SŁUPKOWY temperatury średniej w październiku, listopadzie i grudniu-->
+                    <canvas id= "chart4"></canvas>
                 </div>
                 <div class="table" id="big_table"></div>
                 <p id="demo"></p>
@@ -73,6 +78,7 @@
                 </div>
                 <div class="chart-circle">
                     <!---wykres KOŁOWY zanieczyszczeń powietrza w danym dniu grudnia - taki jak dzisiejsza data-->
+                    <canvas id= "chart5"></canvas>
                 </div>
                 <div class="title-chart">
                     <!---RAFAŁ DAJ TU TYTUŁ WYKRESU (w h2)-->
@@ -80,6 +86,7 @@
                 </div>
                 <div class="chart">
                     <!---wykres LINIOWY ilości pm 2.5 każdego dnia grudnia-->
+                    <canvas id= "chart6"></canvas>
                 </div>
                 <div class="table" id="big_table"></div>
                 <p id="demo"></p>
@@ -94,5 +101,6 @@
                 </footer>
             </div>
         </div>
+        <script src="/scripts/main.js"></script>
     </body>
 </html>
