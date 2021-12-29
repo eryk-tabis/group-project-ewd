@@ -1,9 +1,13 @@
 html {
     scroll-behavior: smooth;
 }
-
 * {
     line-height: 1.2em;
+}
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 }
 .navbar {
     text-shadow: .2em .2em .3em silver;
