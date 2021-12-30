@@ -185,14 +185,14 @@ async function get_data() {
     // const response = await fetch("https://my.api.mockaroo.com/data.json?key=a2d938f0");
     //const data = await response.json();
     // chart1(data)
-    chart1(data)
-    chart2(data)
-    chart3(data)
-    chart4(data)
-    chart5(data)
-    chart6(data)
-    
-
+    chart1(data);
+    chart2(data);
+    chart3(data);
+    chart4(data);
+    chart5(data);
+    chart6(data);
+    document.getElementById("sticky").style.display = 'none';
+    document.getElementById("sticky").style.display = 'block';
 }
 
 get_data()
