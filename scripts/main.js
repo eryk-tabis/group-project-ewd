@@ -31,7 +31,7 @@ function chart1(data) {
         data: {
             labels: chart_data.labels,
             datasets: [{
-                label: 'Temperatura w grudniu',
+                label: 'temperatura w °C',
                 data: chart_data.values,
                 fill: false,
                 borderColor: 'rgb(216, 61, 0)',
@@ -59,7 +59,7 @@ function chart2(data) {
         data: {
             labels: ["2021-10", "2021-11", "2021-12"],
             datasets: [{
-                label: 'Średnia kwartalna temperatura',
+                label: 'Średnia kwartalna temperatura w °C',
                 data: [chart_data_oct_avg, chart_data_nov_avg, chart_data_dec_avg],
                 fill: false,
                 borderColor: 'rgb(216, 61, 0)',
@@ -82,7 +82,7 @@ function chart3(data) {
         data: {
             labels: chart_data.labels,
             datasets: [{
-                label: 'Opady deszczu w grudniu ',
+                label: 'Opady deszczu w l/m²',
                 data: chart_data.values,
                 fill: false,
                 backgroundColor: 'rgb(105,210,250)',
@@ -109,7 +109,7 @@ function chart4(data) {
         data: {
             labels: ["2021-10", "2021-11", "2021-12"],
             datasets: [{
-                label: 'Średnie opady deszczu w kwartale',
+                label: 'Średnie opady deszczu w l/m²',
                 data: [chart_data_oct_avg, chart_data_nov_avg, chart_data_dec_avg],
                 fill: false,
                 backgroundColor: 'rgb(105,210,250)',
@@ -138,6 +138,7 @@ function chart5(data) {
             labels: [chart_data_pm10.label, chart_data_pm25.label, chart_data_o3.label, chart_data_no2.label, chart_data_so2.label],
             datasets: [{
                 label: 'My First Dataset',
+                // !!! jednostki przy value !!!
                 data: [chart_data_pm10.value, chart_data_pm25.value, chart_data_o3.value, chart_data_no2.value, chart_data_so2.value],
                 backgroundColor: [
                     'rgb(255, 99, 132)',
@@ -166,7 +167,7 @@ function chart6(data) {
         data: {
             labels: chart_data.labels,
             datasets: [{
-                label: 'pm 2.5',
+                label: 'pm 2.5 w µg/m³',
                 data: chart_data.values,
                 fill: false,
                 borderColor: 'rgb(216, 61, 0)',
