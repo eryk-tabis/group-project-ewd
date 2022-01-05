@@ -10,44 +10,46 @@
     </head>
     <body>
         <div class="main">
-                <div id="sticky">
+            <div class="table-home" id="big_table"></div>
+            <p id="demo"></p>
+                <div id="sticky" class="sticky">
                     <div class="navbar">
-                        <a href="#AAAA" class="navbar">STRONA GŁÓWNA</a>
-                        <a href="#BBBB" class="navbar">OPADY DESZCZU</a>
-                        <a href="#CCCC" class="navbar">TEMPERATURA</a>
+                        <a href="#big_table" class="navbar">STRONA GŁÓWNA</a>
+                        <a href="#BBBB" class="navbar">TEMPERATURA</a>
+                        <a href="#CCCC" class="navbar">OPADY DESZCZU</a>
                         <a href="#DDDD" class="navbar">ZANIECZYSZCZENIE POWIETRZA</a>
-                    </div>    
+                    </div>
                 </div>
             <div class="AAAA" id="AAAA">
                 <div class='home'>
                     <div class="text-home">
-                        <!---RAFAŁ DAJ TU OPIS (w h1)-->
-                        <!---TU BĘDZIE OPIS PODSTRON I W JAKIM CELU ISTNIEJE TA STRONA-->
                         <h1>Wykresy, obrazki i inne głupoty o pogodzie</h1>
                     </div>
-                    <div class="photo-container">
-                        <!---TU BĘDZIE JAKIEŚ ŁADNE ZDJĘCIE DOTYCZĄCE POGODY-->
-                        <img src="weather.jpg" class="center">
+                    <div class="opis-zdj">
+                        <div class="opis">
+                            <h3>DAJ TU OPIS DŁUŻSZY JAKIŚ necaseycjmao gyvaoyegmucdauyegnoYEM CUYGNMETVYAYUGMUYRGACYEuyes mncfuaoygemucygecosauy ehjubdsuodbfg 
+                                kdjfbnvgsudfhbvgosj sdkfjgbnvaiobdfog asyfvbnouidbfvg isaedrbhnogagiudfv isbdyroiaydfg
+                            </h3>
+                        </div>
+                        <div class="photo-container">
+                            <img src="weather.jpg" id="center" class="photo-weather">
+                        </div>
                     </div>
                 </div>
+            </div>
                 <div class="table" id="big_table"></div>
                 <p id="demo"></p>
-            </div>
             <div class="BBBB" id="BBBB">
                 <div class="title-chart">
-                    <!---RAFAŁ DAJ TU TYTUŁ WYKRESU (w h2)-->
-                    <h2>Dzienne opady w grudniu</h2>
+                    <h2>Temperatura dzienna w grudniu</h2>
                 </div>
                 <div class="chart">
-                    <!---wykres SŁUPKOWY opadów dziennych w grudniu-->
                     <canvas id= "chart1"></canvas>
                 </div>
                 <div class="title-chart">
-                    <!---RAFAŁ DAJ TU TYTUŁ WYKRESU (w h2)-->
                     <h2>Średnia ilość opadów w październiku, listopadzie i grudniu</h2>
                 </div>
                 <div class="chart">
-                    <!---wykres SŁUPKOWY średnich opadów w październiku, listopadzie i grudniu-->
                     <canvas id= "chart2"></canvas>
                 </div>
                 <div class="table" id="big_table"></div>
@@ -55,19 +57,15 @@
             </div>
             <div class="CCCC" id="CCCC">
                 <div class="title-chart">
-                    <!---RAFAŁ DAJ TU TYTUŁ WYKRESU (w h2)-->
-                    <h2>Temperatura dzienna w grudniu</h2>
+                    <h2>Dzienne opady w grudniu</h2>
                 </div>
                 <div class="chart">
-                    <!---wykres LINIOWY temperatury dziennej w grudniu-->
                     <canvas id= "chart3"></canvas>
                 </div>
                 <div class="title-chart">
-                    <!---RAFAŁ DAJ TU TYTUŁ WYKRESU (w h2)-->
-                    <h2>Średnia temperatura w październiku, listopadzie i grudniu</h2>
+                    <h2>Średnie opady w październiku, listopadzie i grudniu</h2>
                 </div>
                 <div class="chart">
-                    <!---wykres SŁUPKOWY temperatury średniej w październiku, listopadzie i grudniu-->
                     <canvas id= "chart4"></canvas>
                 </div>
                 <div class="table" id="big_table"></div>
@@ -75,19 +73,15 @@
             </div>   
             <div class="DDDD" id="DDDD"> 
                 <div class="title-chart">
-                    <!---RAFAŁ DAJ TU TYTUŁ WYKRESU (w h2)-->
-                    <h2>Zanieczyszczeie powietrza</h2>
+                    <h2>Zanieczyszczenie powietrza w dniu</h2>
                 </div>
-                <div class="chart" style= "height: 100vh;">
-                    <!---wykres KOŁOWY zanieczyszczeń powietrza w danym dniu grudnia - taki jak dzisiejsza data-->
+                <div class="chart-circle">
                     <canvas id= "chart5"></canvas>
                 </div>
                 <div class="title-chart">
-                    <!---RAFAŁ DAJ TU TYTUŁ WYKRESU (w h2)-->
                     <h2>Zanieczyszczenie pyłem pm 2.5 w grudniu</h2>
                 </div>
                 <div class="chart">
-                    <!---wykres LINIOWY ilości pm 2.5 każdego dnia grudnia-->
                     <canvas id= "chart6"></canvas>
                 </div>
                 <div class="table" id="big_table"></div>
