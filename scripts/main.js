@@ -152,7 +152,7 @@ function chart5(data) {
             }
         }
     });
-    document.getElementById("chart-circle").innerHTML="Zanieczyszczenie powietrza z dnia " + day + " grudnia";
+    document.getElementById("chart-circle").innerHTML="Zanieczyszczenie powietrza z dnia " + day + " grudnia w  µg/m³";
 }
 
 function chart6(data) {
