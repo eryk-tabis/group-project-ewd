@@ -31,7 +31,7 @@ function chart1(data) {
         data: {
             labels: chart_data.labels,
             datasets: [{
-                label: 'temperatura w °C',
+                label: 'Temperatura w °C',
                 data: chart_data.values,
                 fill: false,
                 borderColor: 'rgb(216, 61, 0)',
@@ -59,7 +59,7 @@ function chart2(data) {
         data: {
             labels: ["2021-10", "2021-11", "2021-12"],
             datasets: [{
-                label: 'Średnia kwartalna temperatura w °C',
+                label: 'Temperatura w °C',
                 data: [chart_data_oct_avg, chart_data_nov_avg, chart_data_dec_avg],
                 fill: false,
                 borderColor: 'rgb(216, 61, 0)',
@@ -109,7 +109,7 @@ function chart4(data) {
         data: {
             labels: ["2021-10", "2021-11", "2021-12"],
             datasets: [{
-                label: 'Średnie opady deszczu w l/m²',
+                label: 'Opady deszczu w l/m²',
                 data: [chart_data_oct_avg, chart_data_nov_avg, chart_data_dec_avg],
                 fill: false,
                 backgroundColor: 'rgb(105,210,250)',

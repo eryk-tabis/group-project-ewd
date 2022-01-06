@@ -4,6 +4,9 @@ html {
 * {
     line-height: 1.2em;
 }
+a {
+    color: inherit;
+}
 #sticky {
 	position: sticky;
 	top: 0;
