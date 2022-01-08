@@ -188,20 +188,14 @@ function addTable(data){
             }
         }
 
-        // CREATE DYNAMIC TABLE.
         var table = document.createElement("table");
-
-        // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
-
-        var tr = table.insertRow(-1);                   // TABLE ROW.
-
+        var tr = table.insertRow(-1);              
         for (var i = 0; i < col.length; i++) {
-            var th = document.createElement("th");      // TABLE HEADER.
+            var th = document.createElement("th");
             th.innerHTML = col[i];
             tr.appendChild(th);
         }
 
-        // ADD JSON DATA TO THE TABLE AS ROWS.
         for (var i = 0; i < data.length; i++) {
 
             tr = table.insertRow(-1);
@@ -212,7 +206,6 @@ function addTable(data){
             }
         }
 
-        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
         var divContainer = document.getElementById("table");
         divContainer.innerHTML = "";
         divContainer.appendChild(table);
@@ -221,6 +214,9 @@ function addTable(data){
 async function get_data() {
     const response = await fetch("https://my.api.mockaroo.com/data.json?key=a2d938f0");
     const data = await response.json();
+    for (i = 0; i < 100; i++){
+        data[i]["day_by_day"] = data[i]["day_by_day"].substring(0, 10)
+    }
     addTable(data);
     chart1(data);
     chart2(data);
