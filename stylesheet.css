@@ -107,3 +107,19 @@ h3 {
 .opis {
     padding-top: 5%;
 }
+#table{
+    display: flex;
+    margin:auto;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 400px;
+    width: 1000px;
+}
+table,td,th{
+    border: 1px solid black;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+
+}
