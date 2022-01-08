@@ -125,9 +125,9 @@ function chart5(data) {
     const day = date.getDate();
     const chart_data_pm10 = get_data_by_day(data, day, "pm10");
     const chart_data_pm25 = get_data_by_day(data, day, "pm2,5");
-    const chart_data_o3 = get_data_by_day(data, day, "o3");
-    const chart_data_no2 = get_data_by_day(data, day, "no2");
-    const chart_data_so2 = get_data_by_day(data, day, "so2");
+    const chart_data_o3 = get_data_by_day(data, day, "O3");
+    const chart_data_no2 = get_data_by_day(data, day, "NO2");
+    const chart_data_so2 = get_data_by_day(data, day, "SO2");
     const ctx = document.getElementById('chart5');
     new Chart(ctx, {
         type: 'doughnut',
